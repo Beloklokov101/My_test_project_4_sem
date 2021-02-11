@@ -7,6 +7,8 @@
 int main()
 {
     std::cout << "Hello Git_2!\n";
+    //Index Editor
+    //Touch
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
