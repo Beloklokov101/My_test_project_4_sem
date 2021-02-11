@@ -6,7 +6,7 @@
 
 int main()
 {
-    std::cout << "Hello Git!\n";
+    std::cout << "Hello Git_2!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
