@@ -140,7 +140,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="My_test_project_4_sem.cpp" />
+    <ClCompile Include="boost_buffer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BankCell.cpp" />
+    <ClCompile Include="stack.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="vector_container.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boost_buffer.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="vector_container.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

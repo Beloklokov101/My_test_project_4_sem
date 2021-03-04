@@ -13,10 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\4-d_sem">
+      <UniqueIdentifier>{a1d132e5-cdd8-409b-95e5-536c66662706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\4-d_sem">
+      <UniqueIdentifier>{89584d38-c429-4ffe-9dbb-68f7aad7b536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\5-d_sem">
+      <UniqueIdentifier>{15189a53-27c6-4b62-b774-044ef2b1fb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\5-d_sem">
+      <UniqueIdentifier>{e3a8609e-7f27-4e7d-8b6f-fb547a0d2e31}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="My_test_project_4_sem.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="boost_buffer.cpp">
+      <Filter>Исходные файлы\4-d_sem</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
+      <Filter>Исходные файлы\4-d_sem</Filter>
+    </ClCompile>
+    <ClCompile Include="BankCell.cpp">
+      <Filter>Исходные файлы\4-d_sem</Filter>
+    </ClCompile>
+    <ClCompile Include="vector_container.cpp">
+      <Filter>Исходные файлы\4-d_sem</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boost_buffer.h">
+      <Filter>Файлы заголовков\4-d_sem</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_container.h">
+      <Filter>Файлы заголовков\4-d_sem</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
