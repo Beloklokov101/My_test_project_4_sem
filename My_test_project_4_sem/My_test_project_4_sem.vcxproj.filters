@@ -19,12 +19,6 @@
     <Filter Include="Файлы заголовков\4-d_sem">
       <UniqueIdentifier>{89584d38-c429-4ffe-9dbb-68f7aad7b536}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\5-d_sem">
-      <UniqueIdentifier>{15189a53-27c6-4b62-b774-044ef2b1fb39}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\5-d_sem">
-      <UniqueIdentifier>{e3a8609e-7f27-4e7d-8b6f-fb547a0d2e31}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -56,5 +50,10 @@
     <ClInclude Include="Timer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="4-d_sem\containers.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
 </Project>

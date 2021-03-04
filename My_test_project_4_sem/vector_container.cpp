@@ -44,7 +44,7 @@ void vector()
 
 }
 
-void do_all(std::ofstream& fout, std::vector<long double>& vec, std::deque<long double>& deq, std::list<long double>& lis, int& N)
+void do_all(std::ofstream& fout, std::vector<long double>& vec, std::deque<long double>& deq, std::list<long double>& lis, const int &N)
 {
 	vec.clear();
 	deq.clear();
@@ -62,82 +62,37 @@ void do_all(std::ofstream& fout, std::vector<long double>& vec, std::deque<long 
 
 	sort(vec.begin(), vec.end());
 
-	fout << "Vector: " << t.elapsed() << "\n";
+	fout << "Vector: N: " << N << " Time: " << t.elapsed() << "\n";
 	t.reset();
 
 	sort(deq.begin(), deq.end());
 
-	fout << "Deque:  " << t.elapsed() << "\n";
+	fout << "Deque:  N: " << N << " Time: " << t.elapsed() << "\n";
 	t.reset();
 
 	lis.sort();
 
-	fout << "List:   " << t.elapsed() << "\n" << "\n";
+	fout << "List:   N: " << N << " Time: " << t.elapsed() << "\n" << "\n";
 }
 
 void container()
 {
 	int N = 100000;
+	int count = 5;
 	std::vector<long double> vec;
 	std::deque<long double> deq;
 	std::list<long double> lis;
-	vec.reserve(N);
-
-	/*
-	for (int i : vec)	std::cout << i << " ";
-	std::cout << "\n";
-	for (int i : deq)	std::cout << i << " ";
-	std::cout << "\n";
-	for (int i : lis)	std::cout << i << " ";
-	std::cout << "\n";
-	*/
+	vec.reserve(N*count);
 
 	std::ofstream fout("containers.txt", std::ios_base::out | std::ios_base::trunc);
 	
 	if (fout.is_open())
 	{
-		for (int i = 1; i < 4; i++)
+		for (int i = 0; i < count; i++)
 		{
-			do_all(fout, vec, deq, lis, N);
-
-			/*
-			for (int i = 0; i < N; ++i)
-			{
-				long double num = std::rand();
-				vec.push_back(num);
-				deq.push_back(num);
-				lis.push_back(num);
-			}
-
-			Timer t;
-
-			sort(vec.begin(), vec.end());
-
-			fout << "Vector: " << t.elapsed() << "\n";
-			t.reset();
-
-			sort(deq.begin(), deq.end());
-
-			fout << "Deque:  " << t.elapsed() << "\n";
-			t.reset();
-
-			lis.sort();
-
-			fout << "List:   " << t.elapsed() << "\n";
-			*/
+			do_all(fout, vec, deq, lis, N * (i + 1));
 		}
 	}
 
 	fout.close();
-
-
-
-	/*
-	for (int i : vec)	std::cout << i << " ";
-	std::cout << "\n";
-	for (int i : deq)	std::cout << i << " ";
-	std::cout << "\n";
-	for (int i : lis)	std::cout << i << " ";
-	std::cout << "\n";
-	*/
 }
