@@ -141,19 +141,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boost_buffer.cpp" />
+    <ClCompile Include="circular_buffer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="BankCell.cpp" />
-    <ClCompile Include="stack.cpp" />
     <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="vector_container.cpp" />
+    <ClCompile Include="time_stamp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boost_buffer.h" />
+    <ClInclude Include="circular_buffer.h" />
     <ClInclude Include="Timer.h" />
-    <ClInclude Include="vector_container.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="4-d_sem\containers.txt" />
+    <ClInclude Include="time_stamp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

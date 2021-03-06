@@ -3,6 +3,7 @@
 #include <vector>
 #include <deque>
 #include <list>
+#include <fstream>
 
 void vec_out(int n, const std::vector<int>& v);
 void vector();

@@ -5,7 +5,7 @@
 using circular_buffer = boost::circular_buffer<int>;
 
 
-int boost_buffer()
+void boost_buffer()
 {
 	circular_buffer cb{ 3 };
 	for (int i = 0; i < 4; ++i)
@@ -17,6 +17,7 @@ int boost_buffer()
 	ar1 = cb.array_one();
 	ar2 = cb.array_two();
 	
+	std::cout << *ar1.first << ";" << *ar2.first << "\n";
 	std::cout << ar1.second << ";" << ar2.second << "\n";
 
 	for (int i : cb)
@@ -30,7 +31,7 @@ int boost_buffer()
 
 	std::cout << ar1.second << ";" << ar2.second << "\n";
 
-	for (int i : cb)
-		std::cout << i << " ";
+	for (int i = 0; i < 2; i++)
+		std::cout << ar2.first[i] << " ";
 	std::cout << "\n";
 }

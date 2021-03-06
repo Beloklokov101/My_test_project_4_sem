@@ -1,6 +1,6 @@
 #ifndef	BOOST_BUFFER
 #define BOOST_BUFFER
 
-int boost_buffer();
+void boost_buffer();
 
 #endif // !1
