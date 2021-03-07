@@ -1,11 +1,11 @@
 #include <iostream>
 //#include "Timer.h"
-#include "circular_buffer.h"
-#include "time_stamp.h"
+//#include "time_stamp.h"
+#include "vector_set.h"
 
 int main()
 {
-	circ_buff();
+	vec_set();
 
 	return 0;
 }

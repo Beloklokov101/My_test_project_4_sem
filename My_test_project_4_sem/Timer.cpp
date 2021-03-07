@@ -3,7 +3,7 @@
 #include "Timer.h"
 
 //using clock_t = std::chrono::high_resolution_clock;
-using second_t = std::chrono::duration<double, std::ratio<1> >;
+//using second_t = std::chrono::duration<double, std::ratio<1> >;
 
 Timer::Timer() : m_beg(clock_t::now()) {}
 

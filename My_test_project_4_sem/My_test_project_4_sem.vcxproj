@@ -140,17 +140,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="boost_buffer.cpp" />
-    <ClCompile Include="circular_buffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="time_stamp.cpp" />
+    <ClCompile Include="vector_container.cpp" />
+    <ClCompile Include="vector_set.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="boost_buffer.h" />
-    <ClInclude Include="circular_buffer.h" />
     <ClInclude Include="Timer.h" />
-    <ClInclude Include="time_stamp.h" />
+    <ClInclude Include="vector_container.h" />
+    <ClInclude Include="vector_set.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

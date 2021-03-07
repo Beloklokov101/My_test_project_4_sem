@@ -62,16 +62,19 @@ void do_all(std::ofstream& fout, std::vector<long double>& vec, std::deque<long 
 
 	sort(vec.begin(), vec.end());
 
+	std::cout << "Vector: N: " << N << " Time: " << t.elapsed() << "\n";
 	fout << "Vector: N: " << N << " Time: " << t.elapsed() << "\n";
 	t.reset();
 
 	sort(deq.begin(), deq.end());
 
+	std::cout << "Deque:  N: " << N << " Time: " << t.elapsed() << "\n";
 	fout << "Deque:  N: " << N << " Time: " << t.elapsed() << "\n";
 	t.reset();
 
 	lis.sort();
 
+	std::cout << "List:   N: " << N << " Time: " << t.elapsed() << "\n" << "\n";
 	fout << "List:   N: " << N << " Time: " << t.elapsed() << "\n" << "\n";
 }
 
