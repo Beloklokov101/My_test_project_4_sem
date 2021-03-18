@@ -1,11 +1,11 @@
 #include <iostream>
 //#include "Timer.h"
 //#include "time_stamp.h"
-#include "vector_set.h"
+#include "multi_vector.h"
 
-int main()
+int main1()
 {
-	vec_set();
+	//multi_vec_test();
 
 	return 0;
 }
