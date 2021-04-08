@@ -3,7 +3,7 @@
 //#include "time_stamp.h"
 #include "multi_vector.h"
 
-int main1()
+int main_not_main()
 {
 	//multi_vec_test();
 
