@@ -5,9 +5,21 @@
 #include <algorithm>
 #include <random>
 #include <chrono>
-#include "Timer.h"
 #include <fstream>
 #include <iomanip>
+
+#include "../../aux_files/Timer.h"
+
+/* Paste to main
+// don't forget to add Timer from aux_files to your project
+// There are a lot of cout, 
+// so comment them, if you're going to run big numbers
+#include "h_w/7-8_sem/vector_set.h"
+int main(){
+	vec_set();
+	return 0;
+}
+*/
 
 void do_all(std::ofstream& fout, const int& N)
 {
@@ -55,7 +67,8 @@ void vec_set()
 	std::cout << "Please write number of elements: \n";
 	std::cin >> N;
 
-	std::ofstream fout("vec_set.txt", std::ios_base::out | std::ios_base::trunc);
+	const char* path = "inf_4_sem/h_w/5-6_sem/vec_set.txt";
+	std::ofstream fout(path, std::ios_base::out | std::ios_base::trunc);
 
 	if (fout.is_open())
 	{

@@ -1,4 +1,8 @@
 ﻿#include <iostream>
+
+//This file doesn't have header.
+//You need to change func. name 'BankCell' to 'main'
+
 class BankCell
 {
 	int cell_number;
@@ -60,7 +64,7 @@ std::ostream& operator<<(std::ostream& out, const Human& h)
 
 
 
-int unmain1()
+int BankCell()
 {
 	//std::shared_ptr<BankCell> cell_222 = std::make_shared<BankCell>(222);
 	

@@ -1,0 +1,20 @@
+Vector: N: 100000 Time: 0.150858
+Deque:  N: 100000 Time: 0.117098
+List:   N: 100000 Time: 0.0705192
+
+Vector: N: 200000 Time: 0.03244
+Deque:  N: 200000 Time: 0.616914
+List:   N: 200000 Time: 0.112137
+
+Vector: N: 300000 Time: 0.0488235
+Deque:  N: 300000 Time: 0.269065
+List:   N: 300000 Time: 0.3287
+
+Vector: N: 400000 Time: 0.134777
+Deque:  N: 400000 Time: 0.106191
+List:   N: 400000 Time: 0.156414
+
+Vector: N: 500000 Time: 0.0411389
+Deque:  N: 500000 Time: 0.140344
+List:   N: 500000 Time: 0.15793
+

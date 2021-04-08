@@ -140,13 +140,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="json_test.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Timer.cpp" />
+    <ClInclude Include="inf_4_sem\aux_files\json.hpp" />
+    <ClInclude Include="inf_4_sem\aux_files\Timer.h" />
+    <ClInclude Include="inf_4_sem\aux_files\time_stamp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\for_cpp\cpp_bibl\json\json.hpp" />
-    <ClInclude Include="Timer.h" />
+    <ClCompile Include="inf_4_sem\aux_files\Timer.cpp" />
+    <ClCompile Include="inf_4_sem\aux_files\time_stamp.cpp" />
+    <ClCompile Include="inf_4_sem\h_w\5-6_sem\vector_container.cpp" />
+    <ClCompile Include="inf_4_sem\h_w\7-8_sem\vector_set.cpp" />
+    <ClCompile Include="inf_4_sem\main.cpp" />
+    <ClCompile Include="inf_4_sem\sem\13-14_sem\json_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

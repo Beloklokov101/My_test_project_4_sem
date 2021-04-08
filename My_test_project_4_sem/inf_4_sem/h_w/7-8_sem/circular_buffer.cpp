@@ -2,8 +2,18 @@
 #include <iostream>
 #include <boost/circular_buffer.hpp>
 #include <ctime>
-#include "time_stamp.h"
 #include <string>
+
+#include "../../aux_files/time_stamp.h"
+
+/*Paste to main,
+// don't forget to add time_stamp from aux_files to your project
+#include "h_w/7-8_sem/circular_buffer.h"
+int main(){
+    circ_buff();
+    return 0;
+}
+*/
 
 using circular_buffer = boost::circular_buffer<std::pair<std::string, std::string>>;
 

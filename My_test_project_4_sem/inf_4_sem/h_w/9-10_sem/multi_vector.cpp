@@ -7,6 +7,8 @@
 #include <deque>
 #include "boost/multi_array.hpp"
 
+//This file in fact doesn't have header.
+//You need to change func. name 'multi_vec' to 'main'
 
 template<size_t dimcount, typename T>
 class multi_vector
@@ -223,7 +225,7 @@ void fill_multi_array(boost::multi_array<T, N>& m_arr, multi_vector<N - 1, T>& v
 }
 
 
-int main()
+int multi_vec()
 {
 	//Type of the item
 	typedef int T;
