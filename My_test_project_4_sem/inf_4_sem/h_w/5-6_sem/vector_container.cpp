@@ -3,9 +3,20 @@
 #include <list>
 #include <deque>
 #include <algorithm>
-#include "Timer.h"
 #include <fstream>
 #include <iomanip>
+
+#include "../../aux_files/Timer.h"
+
+/* Paste to main,
+// don't forget to add Timer from aux_files to your project
+#include "h_w/5-6_sem/vector_container.h"
+int main(){
+	vector();
+	container();
+	return 0;
+}
+*/
 
 void vec_out(int n, const std::vector<int>& v)
 {
@@ -87,7 +98,8 @@ void container()
 	std::list<long double> lis;
 	vec.reserve(N*count);
 
-	std::ofstream fout("containers.txt", std::ios_base::out | std::ios_base::trunc);
+	const char* path = "inf_4_sem/h_w/5-6_sem/vector_container.txt";
+	std::ofstream fout(path, std::ios_base::out | std::ios_base::trunc);
 	
 	if (fout.is_open())
 	{

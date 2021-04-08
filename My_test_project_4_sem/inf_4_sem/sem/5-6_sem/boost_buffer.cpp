@@ -2,8 +2,16 @@
 #include <boost/circular_buffer.hpp>
 #include "boost_buffer.h"
 
-using circular_buffer = boost::circular_buffer<int>;
+/* For main
+#include "sem/5-6_sem/boost_buffer.h"
+int main(){
+	boost_buffer();
+	return 0;
+}
+*/
 
+
+using circular_buffer = boost::circular_buffer<int>;
 
 void boost_buffer()
 {

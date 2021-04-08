@@ -1,8 +1,14 @@
-#include "C:\for_cpp\cpp_bibl\json\json.hpp"
+//#include "C:\for_cpp\cpp_bibl\json\json.hpp"
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <iomanip>  
+
+#include "../../aux_files/json.hpp"
+
+// This file doesn't have header.
+// You need to change func.name 'json_test' to 'main'
+// Don't forget to add "json.hpp" to your project
 
 using json = nlohmann::json;
 
@@ -25,6 +31,13 @@ int main()
 	j["Surname"] = Surname;
 	j["Age"] = Age;
 
-	std::ofstream fout("pearson.json", std::ios::out);
-	fout << std::setw(4) << j;
+	const char* path = "inf_4_sem/sem/13-14_sem/pearson.json";
+	std::ofstream fout(path, std::ios::out);
+
+	if (fout.is_open())
+	{
+		fout << std::setw(4) << j;
+	}
+	else
+		std::cout << "File is unavailable\n";
 }

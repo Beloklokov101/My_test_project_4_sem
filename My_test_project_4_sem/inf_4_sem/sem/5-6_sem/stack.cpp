@@ -1,6 +1,9 @@
 #include <iostream>
 #include <stack>
 
+//This file doesn't have header.
+//You need to change func.name 'stack' to 'main'
+
 void printStack(std::stack<int> &st)
 {
 	while(st.size())
